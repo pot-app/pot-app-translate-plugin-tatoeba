@@ -17,7 +17,7 @@ pub fn translate(
             ("query", text),
             ("from", from),
             ("to", to),
-            ("has_audio", "true"),
+            ("has_audio", "no"),
             ("sort", "relevance"),
         ])
         .send()?
