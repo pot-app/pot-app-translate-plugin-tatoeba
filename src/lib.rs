@@ -55,7 +55,7 @@ mod tests {
     #[test]
     fn try_request() {
         let needs = HashMap::new();
-        let result = translate("你好 世界！", "", "eng", needs).unwrap();
+        let result = translate("你好 世界！", "", "eng", "", needs).unwrap();
         println!("{result:?}");
     }
 }
