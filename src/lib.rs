@@ -7,6 +7,7 @@ pub fn translate(
     text: &str,
     from: &str,
     to: &str,
+    _detect: &str,
     needs: HashMap<String, String>,
 ) -> Result<Value, Box<dyn Error>> {
     let client = reqwest::blocking::ClientBuilder::new().build()?;
